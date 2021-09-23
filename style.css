@@ -1,9 +1,49 @@
 #searchbar {
     position: relative;
+    display: inline-block;
+    margin-left: auto;
+    margin-top: 20px;
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    height: 25px;
+    width: 250px;
+    font-size: 20px;
+    border-radius: 15px;
+    padding-left: 20px;
+    border: 1px solid grey;
 }
 
 #searchbar > i {
     position: absolute;
-    top: 4px;
-    left: 165px;
+    top: 7px;
+    left: 240px;
+}
+
+body {
+    background-image: url('sunny.jpg');
+    background-size: cover;
+}
+
+.fa-search {
+    color: grey;
+}
+
+input:focus {
+    outline: none;
+}
+
+.box {
+    background-color: #344264;
+    color: white;
+    width: 270px;
+    height: 230px;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 50px;
+    display: inline-block;
 }
