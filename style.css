@@ -25,7 +25,7 @@ input {
 }
 
 body {
-    background-image: url('sunny.jpg');
+    background-image: url('./pics/default.jpg');
     background-size: cover;
 }
 
@@ -41,9 +41,32 @@ input:focus {
     background-color: #344264;
     color: white;
     width: 270px;
-    height: 230px;
+    height: 260px;
     border-radius: 20px;
     padding: 15px;
     margin-top: 50px;
     display: inline-block;
+}
+
+#switcher {
+    width: 60px;
+    display: flex;
+}
+
+.temp-button {
+    width: 30px;
+    height: 20px;
+    background-color: beige;
+    color: grey;
+    border: 1px solid grey;
+}
+
+.active {
+    background-color: #81B622;
+    color: black;
+    font-weight: bold;
+} 
+
+.hidden {
+    display: none;
 }
