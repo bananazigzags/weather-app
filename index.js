@@ -1,4 +1,7 @@
 import backgroundChanger from './bgChanger.js';
+// import { config } from './config.js';
+
+const key = config.SECRET_API_KEY;
 
 const temp = document.getElementById("temp");
 const feels = document.getElementById("feels-like");
@@ -11,7 +14,7 @@ let tempUnit = "metric";
 
 function getWeather(city, tempUnit) {
 
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${tempUnit}&APPID=cf317dc7c3d35c6dc81c100d587453a4`, { mode: 'cors' })
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${tempUnit}&APPID=${key}`, { mode: 'cors' })
         .then(function (response) {
             return response.json();
         })
