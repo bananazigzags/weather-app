@@ -1,5 +1,4 @@
 import backgroundChanger from './bgChanger.js';
-// import { config } from './config.js';
 
 const key = config.SECRET_API_KEY;
 
