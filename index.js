@@ -11,6 +11,12 @@ const wind = document.getElementById("wind");
 const display = document.getElementById("weather-display");
 let tempUnit = "metric";
 
+const date = new Date();
+let hours = date.getHours();
+if (hours > 20) {
+    document.body.style.backgroundImage = "url('./pics/night.jpg')";
+}
+
 function getWeather(city, tempUnit) {
 
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${tempUnit}&APPID=${key}`, { mode: 'cors' })
