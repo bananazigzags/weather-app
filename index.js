@@ -1,7 +1,5 @@
 import backgroundChanger from './bgChanger.js';
 
-const key = config.SECRET_API_KEY;
-
 const temp = document.getElementById("temp");
 const feels = document.getElementById("feels-like");
 const tempMin = document.getElementById("temp-min");
@@ -19,7 +17,7 @@ if (hours > 20) {
 
 function getWeather(city, tempUnit) {
 
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${tempUnit}&APPID=${key}`, { mode: 'cors' })
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${tempUnit}&APPID=07e7b81833762fcfe4895174b0c45d91`, { mode: 'cors' })
         .then(function (response) {
             return response.json();
         })
